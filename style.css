@@ -4,7 +4,55 @@
     margin: 0;
     padding: 0;
 }
+
 /* General Styles */
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 4px;
+}
+
 .hero-section {
     background: url('hero-background.jpg') no-repeat center center/cover;
     height: 50vh;
@@ -77,6 +125,7 @@ main {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    max-width: 100%;
 }
 
 .anime-item:hover {
@@ -85,6 +134,7 @@ main {
 
 .anime-item img {
     max-width: 100%;
+    height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -195,5 +245,3 @@ footer {
         font-size: 14px;
     }
 }
-
-    
