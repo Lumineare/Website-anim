@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Stream</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -21,10 +22,28 @@
 
     <main>
         <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h2>Selamat Datang di Anime Stream</h2>
-                <p>Nonton anime favoritmu di sini!</p>
-                <a href="#anime-list" class="btn">Lihat Daftar Anime</a>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero-content">
+                            <h2>Selamat Datang di Anime Stream</h2>
+                            <p>Nonton anime favoritmu di sini!</p>
+                            <a href="#anime-list" class="btn">Lihat Daftar Anime</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-content">
+                            <h2>Anime Terbaru</h2>
+                            <p>Nikmati anime terbaru dengan kualitas terbaik.</p>
+                            <a href="#anime-list" class="btn">Tonton Sekarang</a>
+                        </div>
+                    </div>
+                    <!-- Tambahkan slide lain jika diperlukan -->
+                </div>
+                <!-- Tambahkan navigasi jika diperlukan -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -69,5 +88,20 @@
     <footer>
         <p>&copy; 2024 Anime Stream. All rights reserved.</p>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
