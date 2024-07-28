@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Stream</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Anime Stream</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#anime-list">Daftar Anime</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Selamat Datang di Anime Stream</h2>
+                <p>Nonton anime favoritmu di sini!</p>
+                <a href="#anime-list" class="btn">Lihat Daftar Anime</a>
+            </div>
+        </section>
+
+        <section id="anime-list" class="anime-section">
+            <h2>Daftar Anime</h2>
+            <div class="anime-grid">
+                <div class="anime-item">
+                    <img src="ryuko.jpg" alt="Anime 1">
+                    <h3>Anime 1</h3>
+                    <p>Deskripsi singkat anime 1.</p>
+                    <a href="anime1.html" class="btn">Tonton Sekarang</a>
+                </div>
+                <div class="anime-item">
+                    <img src="ojisan.jpg" alt="Anime 2">
+                    <h3>Anime 2</h3>
+                    <p>Deskripsi singkat anime 2.</p>
+                    <a href="anime2.html" class="btn">Tonton Sekarang</a>
+                </div>
+                <!-- Tambahkan lebih banyak item anime sesuai kebutuhan -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>Tentang Kami</h2>
+            <p>Anime Stream adalah situs terbaik untuk menonton anime favorit Anda secara online.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Kontak Kami</h2>
+            <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anime Stream. All rights reserved.</p>
+    </footer>
+</body>
+</html>
