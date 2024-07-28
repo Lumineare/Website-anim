@@ -10,12 +10,13 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
     background-color: #1c1c1c;
     color: white;
-    padding: 10px 0;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +28,6 @@ header {
 
 header .logo {
     font-size: 1.5rem;
-    margin-left: 20px;
 }
 
 nav ul {
@@ -102,6 +102,16 @@ main {
 .anime-section h2 {
     text-align: center;
     margin-bottom: 40px;
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
 }
 
 .anime-item {
@@ -192,9 +202,7 @@ footer {
         padding: 10px;
     }
 
-    .anime-grid {
-        grid-template-columns: 1fr;
+    .swiper-slide {
+        width: 80%;
     }
 }
-
-/* Swiper CSS */
